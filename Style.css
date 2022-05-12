@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: "Helvetica Neue", Helvetica, "sans-serif";
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+#img-adv{
+    padding: 15px 15% 15px 15%;
+    align-content: center
+}
+
+.navbar{
+    background-color: #4297b5;
+    color: #ffffff;
+    min-height: 41px;
+    position: relative;
+    padding-left: 5%;
+}
+
+.container{
+    height: 38px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#first-menu li{
+    font-size: 10px;
+    float: left;
+    list-style-type: none;
+    min-height: 38px;
+    border-right: 1px solid #64bcdc;
+
+}
+
+#first-menu li a:link,
+#first-menu li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px 15px 6px;
+    text-align: left;
+
+}
+
+#first-menu li a:hover{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.arrow{
+    display: none;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+
+.navbar span, .navbar span:before, .navbar span:after{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.navbar span:before, .navbar span:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 9px;
+}
+
+.navbar span:after{
+    top:18px;
+}
+
+#facebook{
+    width: 20px;
+    height: 20px;
+}
+
+#twitter{
+    width: 20px;
+    height: 20px;
+}
+
+#sun{
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    position: relative;
+}
+
+.social{
+    width: 100%;
+    margin: 0 auto;
+    height: 20px;
+}
+#second-menu{
+    padding-left: 4%;
+}
+
+#second-menu li{
+    float: left;
+    min-height: 20px;
+    list-style-type: none;
+}
+
+#third-menu li a:link,
+#third-menu li a:visited,
+#second-menu li a:link,
+#second-menu li a:visited {
+    color:#333333;
+    text-decoration: none;
+    padding: 10px 0 0 12px;
+    display: block;
+}
+
+#second-menu li a:hover,
+#third-menu li a:hover{
+    color:#333333;
+}
+
+#second-menu li a.meteo{
+    padding-left: 45px;
+}
+
+#third-menu{
+    position: absolute;
+    right: 2%;
+    list-style-type: none;
+}
+
+.nome{
+    padding-top: 50px;
+    color: midnightblue;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+
+.citta{
+    width: 100%;
+    border-top: 1px solid #b6b3b3;
+    border-bottom: 1px solid #b6b3b3;
+    margin: 0 auto;
+    height: 40px;
+    padding-left: 5%;
+}
+
+#fourth-menu li{
+    float: left;
+    list-style-type: none;
+
+}
+
+#fourth-menu li a:link,
+#fourth-menu li a:visited{
+    color: #595757;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-right: 100px;
+    text-align: left;
+
+}
+
+#fourth-menu li a:hover{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#lente{
+    width: 20px;
+    height: 20px;
+}
