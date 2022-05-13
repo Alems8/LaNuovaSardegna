@@ -15,13 +15,13 @@
     padding: 15px 15% 15px 15%;
     align-content: center
 }
-
+/*START NAVBAR*/
 .navbar{
     background-color: #4297b5;
     color: #ffffff;
     min-height: 41px;
     position: relative;
-    padding-left: 5%;
+    padding-left: 15%;
 }
 
 .container{
@@ -59,6 +59,17 @@
     color: #333333;
 }
 
+/*END NAVBAR*/
+
+/*TITOLO*/
+.main-container{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: relative;
+}
+
+
 #facebook{
     width: 20px;
     height: 20px;
@@ -74,17 +85,14 @@
     height: 20px;
 }
 
-.logo{
+/*.logo{
     position: relative;
-}
+}*/
 
 .social{
     width: 100%;
     margin: 0 auto;
     height: 20px;
-}
-#second-menu{
-    padding-left: 4%;
 }
 
 #second-menu li{
@@ -113,15 +121,13 @@
 }
 
 #third-menu{
-    position: absolute;
-    right: 2%;
+    float: right;
     list-style-type: none;
 }
 
 .nome{
     padding-top: 50px;
     color: midnightblue;
-    padding-left: 5%;
     padding-bottom: 50px;
 }
 
@@ -131,12 +137,12 @@
     border-bottom: 1px solid #b6b3b3;
     margin: 0 auto;
     height: 40px;
-    padding-left: 5%;
 }
 
 #fourth-menu li{
     float: left;
     list-style-type: none;
+    padding:10px 8% 0 0;
 
 }
 
@@ -145,10 +151,7 @@
     color: #595757;
     text-decoration: none;
     display: block;
-    padding-top: 10px;
-    padding-right: 100px;
     text-align: left;
-
 }
 
 #fourth-menu li a:hover{
@@ -156,7 +159,14 @@
     color: #333333;
 }
 
+#fourth-menu li.lente{
+    float: right;
+    padding: 10px 0 0 0;
+}
+
 #lente{
     width: 20px;
     height: 20px;
 }
+
+/*END TITOLO*/
