@@ -73,16 +73,19 @@
 #facebook{
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 #twitter{
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 #sun{
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 /*.logo{
@@ -229,10 +232,13 @@
 .central-content h4{
     display: inline;
 }
-
+.central-content img.right-arrow {
+    width: 20px;
+}
 .right-arrow{
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 .right-content{
@@ -270,6 +276,7 @@
 .local-news-container{
     height: auto;
     display: flex;
+    border-bottom: 2px solid #4297b5;
 }
 
 .local-news-container a:link,
@@ -298,6 +305,14 @@
 }
 .central-content-2 h3{
     display: inline;
+}
+
+.central-content-2 img.right-arrow{
+    float: none;
+}
+
+.central-content-2 div:last-child{
+    border-bottom: none;
 }
 
 .right-content-2{
@@ -341,6 +356,15 @@
     color: #4297b5;
 }
 
+.video div.all-regional-news-container{
+    text-align: right;
+}
+
+.video img.right-arrow{
+    width: 20px;
+    padding-left: 5px;
+}
+
 #last-video{
     border-bottom: 1px solid #b6b3b3;
 }
@@ -351,8 +375,59 @@
 .other-news-container{
     text-align: right;
 }
-a.other-news{
+.central-content-2 a.other-news{
     text-decoration: none;
     color: #4297b5;
 }
 
+footer{
+    color: #ffffff;
+    background-color: #4D4D4D;
+    font-size: 12px;
+    position: relative;
+    margin-top: 50px;
+}
+.footer-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-menu-container{
+    height: 16px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.footer-menu li{
+    float: left;
+    min-height: 15px;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #ffffff;
+}
+
+.footer-menu li:first-child{
+    padding-left: 0;
+}
+.footer-menu li:last-child{
+    border-right: none;
+}
+
+.footer-menu li a:link,
+.footer-menu li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sede{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.copy{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
