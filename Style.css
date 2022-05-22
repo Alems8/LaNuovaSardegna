@@ -142,10 +142,23 @@
 
 .nome{
     padding-top: 50px;
-    color: #0c0c5e;
     padding-bottom: 50px;
+    color: #0c0c5e;
     font-family: "isle_body_personal_usemedium", Helvetica Neue, Helvetica, sans-serif;
     font-size: 26px;
+    width: 242px;
+    position: relative;
+}
+.nome h1{
+    height: 60px;
+}
+
+.nome span{
+    color: #595757;
+    font-size: 14px;
+    vertical-align: top;
+    float: right;
+
 }
 
 .citta{
@@ -451,7 +464,86 @@ footer{
         display: none;
     }
     .navbar{
+        min-height: 5px;
+    }
+    .container{
+        height: 5px;
+    }
+    #first-menu{
         display: none;
     }
+    .main-container{
+        width: 95%;
+    }
+    .social{
+        display: none;
+    }
+    .nome{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .content-main{
+        display: block;
+    }
+
+    .central-content{
+        display: block;
+    }
+    .central-content img.main-news-imgs{
+        display: none;
+    }
+    .central-content div{
+        width: 100%;
+    }
+
+    .central-content div:nth-child(3),
+    .central-content div:nth-child(6){
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .right-content{
+        display: block;
+    }
+    .right-content div{
+        padding-top: 0;
+    }
+
+
+
+    .local-news-container{
+        display: block;
+        border-bottom: none;
+    }
+
+    .central-content-2{
+        display: block;
+        width: 100%;
+    }
+    .central-content-2 img{
+        float: none;
+        display: none;
+    }
+    #local-news-img-principle{
+        width: 100%;
+        display: block;
+    }
+    .right-content-2{
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .video div.all-regional-news-container{
+        text-align: center;
+    }
+
+    .footer-container{
+        width: 95%;
+    }
+
 
 }
