@@ -75,6 +75,85 @@
     color: #333333;
 }
 
+.dossier-button{
+    text-decoration: none;
+    border: 0;
+    background-color: #4297b5;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.dossier-button:hover{
+    background-color: #ffffff;
+    color: #333333;
+
+}
+
+.dossier-click{
+    display: none;
+    position: absolute;
+    background-color: #e8f2f6;
+    z-index: 1000;
+    width: 70%;
+    padding: 20px 0 20px 30px;
+}
+.dossier-click h2{
+    color: black;
+    padding: 0 0 10px 10px;
+}
+
+#dossier-list li{
+    font-size: 20px;
+    float: left;
+    list-style-type: none;
+    min-height: 15px;
+}
+#dossier-list li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+
+.annunci-button{
+    text-decoration: none;
+    border: 0;
+    background-color: #4297b5;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 10px;
+}
+.annunci-button:hover{
+    background-color: #ffffff;
+    color: #333333;
+
+}
+
+.annunci-click{
+    display: none;
+    position: absolute;
+    background-color: #e8f2f6;
+    z-index: 1000;
+    width: 70%;
+    padding: 20px 0 20px 30px;
+}
+
+#annunci-list li{
+    font-size: 20px;
+    float: left;
+    list-style-type: none;
+    min-height: 15px;
+}
+#annunci-list li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+
+
+
 /*END NAVBAR*/
 
 /*TITOLO*/
@@ -150,16 +229,54 @@
     position: relative;
 }
 .nome h1{
-    height: 60px;
+    height: 45px;
+    font-size: 45px;
 }
 
 .nome span{
     color: #595757;
-    font-size: 14px;
+    font-size: 10px;
     vertical-align: top;
     float: right;
 
 }
+
+.check-list-button{
+    display: none;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 25px;
+    background-color: white;
+}
+
+.cross-button{
+    display: none;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 25px;
+    z-index: 1000;
+    background-color: white;
+}
+.cross-button img{
+    width: 28px;
+    height: 28px;
+}
+
+#user-symbol{
+    display: none;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
 
 .citta{
     width: 100%;
@@ -193,6 +310,29 @@
 #lente{
     width: 20px;
     height: 20px;
+}
+
+.cambia-edizione{
+    visibility: hidden;
+    display: flex;
+    background-color: #F3F3F3;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+.cambia-edizione div{
+    flex-basis: 68%;
+    text-align: end;
+}
+.cambia-edizione div:last-child{
+    flex-shrink: 20;
+}
+
+.edizione-button{
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 /*END TITOLO*/
@@ -464,25 +604,111 @@ footer{
         display: none;
     }
     .navbar{
-        min-height: 5px;
+        min-height: 2px;
     }
     .container{
-        height: 5px;
+        height: 2px;
     }
     #first-menu{
         display: none;
+        position: absolute;
+        left: 0;
+        top: 110px;
+        z-index: 1000;
+        width: 100%;
+        font-family: Helvetica Neue, Helvetica, sans-serif;
     }
+    #first-menu li{
+        float: none;
+        border-right: none;
+        font-size: 16px;
+        border-bottom: 1px solid #b6b3b3;
+    }
+    #first-menu li a:link,
+    #first-menu li a:visited,
+    #first-menu li a:hover{
+        color: black;
+        background-color: #ffffff;
+        padding: 10px 10px;
+        text-transform: lowercase;
+    }
+    .dossier-button{
+        font-size: 16px;
+        width: 100%;
+    }
+    .annunci-button{
+        font-size: 16px;
+        width: 100%;
+    }
+
     .main-container{
         width: 95%;
     }
     .social{
         display: none;
     }
+    .check-list-button{
+        display: block;
+    }
+
+
     .nome{
         text-align: center;
         margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    #user-symbol{
+        display: block;
+    }
+
+    .cambia-edizione{
+        visibility: visible;
+    }
+    .citta{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        border-top: none;
+        border-bottom: none;
+        padding-top: 20px;
+
+    }
+    .citta-display{
+        display: flex;
+    }
+    .citta div{
+        width: 100%;
+        padding: 5px 0;
+        z-index: 900;
+        text-transform: uppercase;
+        font-size: 12px;
+        background-color: #F3F3F3;
+    }
+    .citta div:nth-child(1){
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .citta div:nth-child(7){
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .citta a:link,
+    .citta a:visited{
+        color: #4297b5;
+    }
+    .citta a:hover{
+        color: white;
+        background-color: #4297b5;
+    }
+
+    .citta div.search,
+    .citta div.lente{
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
     }
 
     .content-main{

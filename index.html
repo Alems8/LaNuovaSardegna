@@ -8,16 +8,28 @@
     <meta name="keywords" content="newspaper, news, sardinia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="Style.css" type="text/css">
-
-<!--    <script type="text/javascript">
-                $(document).ready(function(){
-                        $(".toggle-mnu").on("click", function() {
-                                $(this).toggle("on");
-                                $("#first-menu").toggle("open-menu");
-                                return false;
-                        });
-                });
-    </script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".annunci-button").click(function() {
+                $(".annunci-click").toggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".dossier-button").click(function() {
+                $(".dossier-click").toggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".edizione-button").click(function() {
+                $(".citta").toggle(".citta-display");
+            });
+        });
+    </script>
 
 </head>
 
@@ -33,14 +45,33 @@
             <li><a href="#">HOME</a></li>
             <li><a href="#">SPORT</a></li>
             <li><a href="#">CULTURA E TEMPO LIBERO</a></li>
-            <li><a href="#" class="dossier">DOSSIER <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"> </a></li>
+            <li><button class="dossier-button"><a href="#" class="dossier">DOSSIER <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"> </a></button></li>
             <li><a href="#">ITALIA MONDO</a></li>
             <li><a href="#">FOTO</a></li>
             <li><a href="#">VIDEO</a></li>
-            <li><a href="#" class="annunci">ANNUNCI <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"></a></li>
+            <li><button class="annunci-button"><a href="#" class="annunci">ANNUNCI <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"></a></button></li>
             <li><a href="#">PRIMA</a></li>
         </ul>
     </div>
+
+    <div class="dossier-click">
+        <h2>SI PARLA DI:</h2>
+        <ul id="dossier-list">
+            <li><a href="#">Tutto Dinamo</a></li>
+            <li><a href="#">Tutto Cagliari</a></li>
+            <li><a href="#">La Mia Isola</a></li>
+        </ul>
+    </div>
+
+    <div class="annunci-click">
+        <ul id="annunci-list">
+            <li><a href="#">Lavoro</a></li>
+            <li><a href="#">Annunci</a></li>
+            <li><a href="#">Aste</a></li>
+            <li><a href="#">Necrologie</a></li>
+        </ul>
+    </div>
+
 </nav>
 
 
@@ -63,6 +94,10 @@
             <h1>LA NUOVA</h1>
             <span>Nuova Sardegna</span>
         </div>
+
+        <div><button class="check-list-button"><img src="icons/burger-checklist-list-menu-navigation-svgrepo-com.svg" alt="menù a tendina"></button></div>
+        <div><button class="cross-button"><img src="icons/cross-svgrepo-com.svg" alt="x chiusura menù a tendina"></button></div>
+        <div id="user-symbol"><img src="icons/user-svgrepo-com.svg" alt="simbolo utente"></div>
     </div>
 
 
@@ -74,8 +109,13 @@
         <div><a href="#">Olbia</a></div>
         <div><a href="#">Oristano</a></div>
         <div><a href="#">Tutti i comuni</a></div>
-        <div><a href="#">Cerca</a></div>
+        <div class="search"><a href="#">Cerca</a></div>
         <div class="lente"><a href="#" ><img src="icons/search-svgrepo-com.svg" id="lente" alt="lente d'ingrandimento"></a></div>
+    </div>
+
+    <div class="cambia-edizione">
+        <div><button class="edizione-button">CAMBIA EDIZIONE</button></div>
+        <div><button class="edizione-button"><img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"></button></div>
     </div>
 
 
