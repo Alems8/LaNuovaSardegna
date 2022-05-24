@@ -13,6 +13,7 @@
         $(document).ready(function(){
             $(".annunci-button").click(function() {
                 $(".annunci-click").toggle();
+                $("#annunci-arrow").toggleClass("arrow-rotated");
             });
         });
     </script>
@@ -20,13 +21,14 @@
         $(document).ready(function(){
             $(".dossier-button").click(function() {
                 $(".dossier-click").toggle();
+                $("#dossier-arrow").toggleClass("arrow-rotated");
             });
         });
     </script>
     <script>
         $(document).ready(function(){
             $(".edizione-button").click(function() {
-                $(".citta").toggle(".citta-display");
+                $(".citta").toggleClass("citta-display");
             });
         });
     </script>
@@ -42,15 +44,18 @@
 <nav class="navbar">
     <div class="container">
         <ul id="first-menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SPORT</a></li>
-            <li><a href="#">CULTURA E TEMPO LIBERO</a></li>
-            <li><button class="dossier-button"><a href="#" class="dossier">DOSSIER <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"> </a></button></li>
-            <li><a href="#">ITALIA MONDO</a></li>
-            <li><a href="#">FOTO</a></li>
-            <li><a href="#">VIDEO</a></li>
-            <li><button class="annunci-button"><a href="#" class="annunci">ANNUNCI <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" alt="freccia"></a></button></li>
-            <li><a href="#">PRIMA</a></li>
+            <li><a href="#">VAI ALL'EDICOLA</a></li>
+            <li class="search"><a href="#">Cerca<img src="icons/search-svgrepo-com.svg" class="lente-img" alt="lente d'ingrandimento"></a></li>
+<!--            <li class="lente"><a href="#" ></a></li>-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Cultura e tempo libero</a></li>
+            <li><button class="dossier-button"><a href="#" class="dossier">Dossier <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" id="dossier-arrow" alt="freccia"> </a></button></li>
+            <li><a href="#">Italia mondo</a></li>
+            <li><a href="#">Foto</a></li>
+            <li><a href="#">Video</a></li>
+            <li><button class="annunci-button"><a href="#" class="annunci">Annunci <img src="icons/down-arrow-svgrepo-com.svg" class="arrow" id="annunci-arrow" alt="freccia"></a></button></li>
+            <li><a href="#">Prima</a></li>
         </ul>
     </div>
 
@@ -110,7 +115,7 @@
         <div><a href="#">Oristano</a></div>
         <div><a href="#">Tutti i comuni</a></div>
         <div class="search"><a href="#">Cerca</a></div>
-        <div class="lente"><a href="#" ><img src="icons/search-svgrepo-com.svg" id="lente" alt="lente d'ingrandimento"></a></div>
+        <div class="lente"><a href="#" ><img src="icons/search-svgrepo-com.svg" class="lente-img" alt="lente d'ingrandimento"></a></div>
     </div>
 
     <div class="cambia-edizione">

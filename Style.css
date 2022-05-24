@@ -47,6 +47,13 @@
     width: 8px;
     height: 8px;
 }
+.arrow-rotated{
+    transform: rotate(180deg);
+    padding-left: 0;
+    padding-right: 5px;
+    width: 8px;
+    height: 8px;
+}
 
 
 #first-menu li{
@@ -55,6 +62,12 @@
     list-style-type: none;
     min-height: 15px;
     border-right: 1px solid #64bcdc;
+    text-transform: uppercase;
+}
+#first-menu li:nth-child(1),
+#first-menu li:nth-child(2),
+#first-menu li:nth-child(3){
+    display: none;
 }
 
 #first-menu li:last-child{
@@ -82,6 +95,7 @@
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
+    text-transform: uppercase;
 }
 
 .dossier-button:hover{
@@ -123,6 +137,7 @@
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
+    text-transform: uppercase;
 }
 .annunci-button:hover{
     background-color: #ffffff;
@@ -307,7 +322,7 @@
 }
 
 
-#lente{
+.lente-img{
     width: 20px;
     height: 20px;
 }
@@ -610,7 +625,7 @@ footer{
         height: 2px;
     }
     #first-menu{
-        display: none;
+
         position: absolute;
         left: 0;
         top: 110px;
@@ -624,13 +639,23 @@ footer{
         font-size: 16px;
         border-bottom: 1px solid #b6b3b3;
     }
+    #first-menu li:nth-child(1),
+    #first-menu li:nth-child(2){
+        display: block;
+    }
+
+
+
     #first-menu li a:link,
     #first-menu li a:visited,
     #first-menu li a:hover{
         color: black;
         background-color: #ffffff;
         padding: 10px 10px;
-        text-transform: lowercase;
+        text-transform: capitalize;
+    }
+    #first-menu li a:nth-child(1){
+        color: #4297b5;
     }
     .dossier-button{
         font-size: 16px;
@@ -667,7 +692,7 @@ footer{
         visibility: visible;
     }
     .citta{
-        display: flex;
+        visibility: hidden;
         flex-flow: column;
         align-items: flex-start;
         border-top: none;
@@ -676,7 +701,7 @@ footer{
 
     }
     .citta-display{
-        display: flex;
+        visibility: visible;
     }
     .citta div{
         width: 100%;
@@ -705,10 +730,7 @@ footer{
 
     .citta div.search,
     .citta div.lente{
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        top: 0;
+        display: none;
     }
 
     .content-main{
