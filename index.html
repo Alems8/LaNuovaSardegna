@@ -32,6 +32,24 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".check-list-button").click(function() {
+                $("#first-menu").toggle();
+                $(".check-list").toggleClass("check-list-toggle");
+                $(".cross-button").toggleClass("cross-toggle");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".cross-button").click(function() {
+                $("#first-menu").toggle();
+                $(".check-list").toggleClass("check-list-toggle");
+                $(".cross-button").toggleClass("cross-toggle");
+            });
+        });
+    </script>
 
 </head>
 
@@ -100,8 +118,8 @@
             <span>Nuova Sardegna</span>
         </div>
 
-        <div><button class="check-list-button"><img src="icons/burger-checklist-list-menu-navigation-svgrepo-com.svg" alt="menù a tendina"></button></div>
-        <div><button class="cross-button"><img src="icons/cross-svgrepo-com.svg" alt="x chiusura menù a tendina"></button></div>
+        <div class="check-list"><button class="check-list-button"><img src="icons/burger-checklist-list-menu-navigation-svgrepo-com.svg" alt="menù a tendina"></button></div>
+        <div class="cross"><button class="cross-button"><img src="icons/cross-svgrepo-com.svg" alt="x chiusura menù a tendina"></button></div>
         <div id="user-symbol"><img src="icons/user-svgrepo-com.svg" alt="simbolo utente"></div>
     </div>
 

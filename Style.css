@@ -279,8 +279,8 @@
     background-color: white;
 }
 .cross-button img{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 
 #user-symbol{
@@ -614,6 +614,13 @@ footer{
 }
 
 
+@media screen and (max-width: 1276px){
+    .main-container{
+        width: 97%;
+    }
+}
+
+
 @media screen and (max-width: 768px){
     .adv{
         display: none;
@@ -625,7 +632,7 @@ footer{
         height: 2px;
     }
     #first-menu{
-
+        display: none;
         position: absolute;
         left: 0;
         top: 110px;
@@ -643,7 +650,12 @@ footer{
     #first-menu li:nth-child(2){
         display: block;
     }
-
+    #first-menu li:last-child{
+        border-bottom: none;
+    }
+    #first-menu li.search img{
+        float: right;
+    }
 
 
     #first-menu li a:link,
@@ -654,11 +666,32 @@ footer{
         padding: 10px 10px;
         text-transform: capitalize;
     }
-    #first-menu li a:nth-child(1){
+
+    #first-menu li:first-child a{
         color: #4297b5;
     }
+    #first-menu li:last-child a{
+        height: 60vh;
+    }
+    #first-menu li.search a{
+        background-color: #efe9e9;
+        color: #949191;
+    }
+
+    .check-list-toggle{
+        display: none;
+    }
+    .cross-toggle{
+        display: block;
+    }
+
     .dossier-button{
         font-size: 16px;
+        width: 100%;
+    }
+    .dossier-click{
+        top: 304px;
+        left: 0;
         width: 100%;
     }
     .annunci-button{
@@ -666,6 +699,11 @@ footer{
         width: 100%;
     }
 
+    .annunci-click{
+        top: 460px;
+        left: 0;
+        width: 100%;
+    }
     .main-container{
         width: 95%;
     }
@@ -759,8 +797,6 @@ footer{
     .right-content div{
         padding-top: 0;
     }
-
-
 
     .local-news-container{
         display: block;
